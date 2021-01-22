@@ -20,13 +20,13 @@ hbs.registerPartials(partialsPath);
 app.use(express.static(publicDirectoryPath));
 app.get("", (req, res) => {
   res.render("index", {
-    title: "Weather app",
+    title: "Weather App",
     name: "Imran Hossain",
   });
 });
 app.get("/about", (req, res) => {
   res.render("about", {
-    title: "Done by some",
+    title: "About Page",
     name: "Imran Hossain",
   });
 });
